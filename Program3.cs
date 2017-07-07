@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +11,10 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             int n, i, min, nmin;
-            Console.WriteLine("Введите количество элементов в массиве");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ");
             n = int.Parse(Console.ReadLine());
             int[] X = new int[n];
-            Console.WriteLine("Введите элемнты массива");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ СЌР»РµРјРЅС‚С‹ РјР°СЃСЃРёРІР°");
             for (i = 0; i < n; i++)
             {
                 X[i] = int.Parse(Console.ReadLine());
@@ -29,12 +29,12 @@ namespace ConsoleApplication2
                     nmin = i;
                 }
             }
-            Console.WriteLine("Исходный массив: ");
+            Console.WriteLine("РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: ");
             for (i = 0; i < n; i++)
                 Console.Write(X[i] + " ");
             Console.WriteLine("\n");
-            Console.WriteLine("Минимальный элемент массива: " + min);
-            Console.WriteLine("Индекс минимального элемен: " + nmin);
+            Console.WriteLine("РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: " + min);
+            Console.WriteLine("РРЅРґРµРєСЃ РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅ: " + nmin);
             Console.ReadKey();
         }
     }
